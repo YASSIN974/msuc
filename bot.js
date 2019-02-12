@@ -18,7 +18,7 @@ client.on('ready', () => {
  client.user.setGame(`☆`,`https://www.twitch.tv/skwadraa`);
 });
  
-const prefix = "3"
+const prefix = "S"
 client.on('message', async msg => {
     if (msg.author.bot) return undefined;
     if (!msg.content.startsWith(prefix)) return undefined;
@@ -244,7 +244,7 @@ client.on('message', message => {
   if (!message.content.startsWith(prefix)) return;
   var args = message.content.split(' ').slice(1);
   var argresult = args.join(' ');
-  if (message.author.id !== "332713449215754242") return;
+  if (message.author.id !== "489794513204805632") return;
 
 if (message.content.startsWith(prefix + 'setstream')) {
   client.user.setGame(argresult, "https://www.twitch.tv/darkknite55");
